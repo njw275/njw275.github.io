@@ -65,7 +65,7 @@ $('.vertical-text-left, .vertical-text-right, #creative, #softwareEngineering').
 */
 $('#creative, .vertical-text-right').on('click',function(){
 
-    showCreativeCategories(0);
+    showCreativeCategories(1500);
 
     if(!first){
     $("#aboutPicture").css("z-index", x);
