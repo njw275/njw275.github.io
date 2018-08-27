@@ -304,18 +304,17 @@ function showSoftwareEngineeringCategories(timeToShow){
     // $('#softwareEngineering').addClass('takeOver');
 }
 
-
 function showCreativeCategories(timeToShow){
   $("#githubPic").css({"top" : "96%", "left" : "0.5%"});
   $("#linkedInPic").css({"top" : "96%", "left" : "3%"});
 
   $('.vertical-text-right').animate({left: "100%"}); /*left -5%*/
   $('.csWork').hide();
-  $('.topLeft').css({fontSize: "4vw", top: "-20%", left: "20%"},1500)
-  $('.topRight').css({fontSize: "4vw", top: "-20%", left: "80%"},1500)
+  $('.topLeft').css({fontSize: "4vw", top: "-20%", left: "20%"})
+  $('.topRight').css({fontSize: "4vw", top: "-20%", left: "80%"})
 
-  $('.bottomLeft').css({fontSize: "4vw", top: "120%", left: "20%"},1500)
-  $('.bottomRight').css({fontSize: "4vw", top: "120%", left: "80%"},1500)
+  $('.bottomLeft').css({fontSize: "4vw", top: "120%", left: "20%"})
+  $('.bottomRight').css({fontSize: "4vw", top: "120%", left: "80%"})
   // $('.topRight').delay(1500).animate({fontSize: "4vw", top: "20%", left: "80%"},3000)
   $('.creativeWork').show();
   $('.workContainer').css({height: "100%",right : "0px", left: ''});
@@ -324,38 +323,18 @@ function showCreativeCategories(timeToShow){
   $("#creative").animate({width: "91.5%"},2000);
   $("#softwareEngineering").delay(900).animate({width: "8.5%"},2000); /* , left: "91.5%" */
 
+  $('.right').animate({margin: "500px auto"},2000);
+  $('.sideleft').css({fontSize: "0px"},5000);
+  // $('.techWorkCreative').delay(1500).animate({fontSize: "4vw", top: "20%", left: "20%"},3000)
+  $('.topLeft').delay(timeToShow).animate({fontSize: "4vw", top: "20%", left: "20%"},1500)
+  $('.topRight').delay(timeToShow).animate({fontSize: "4vw", top: "20%", left: "80%"},1500)
 
-      $('.right').animate({margin: "500px auto"},2000);
-      $('.sideleft').css({fontSize: "0px"},5000);
-      // $('.techWorkCreative').delay(1500).animate({fontSize: "4vw", top: "20%", left: "20%"},3000)
-      $('.topLeft').delay(timeToShow).animate({fontSize: "4vw", top: "20%", left: "20%"},1500)
-      $('.topRight').delay(timeToShow).animate({fontSize: "4vw", top: "20%", left: "80%"},1500)
+  $('.bottomLeft').delay(timeToShow).animate({fontSize: "4vw", top: "70%", left: "20%"},1500)
+  $('.bottomRight').delay(timeToShow).animate({fontSize: "4vw", top: "70%", left: "80%"},1500)
 
-      $('.bottomLeft').delay(timeToShow).animate({fontSize: "4vw", top: "70%", left: "20%"},1500)
-      $('.bottomRight').delay(timeToShow).animate({fontSize: "4vw", top: "70%", left: "80%"},1500)
+  $('.vertical-text-left').delay(2500).animate({left: "-5%"}); /*left -5%*/
+  x++;
+  // console.log("x after creative click is: " + x);
 
-      $('.vertical-text-left').delay(2500).animate({left: "-5%"}); /*left -5%*/
-      x++;
-      // console.log("x after creative click is: " + x);
-
-      $("#CV").css({"top" : "96%", "left" : "96%"});
-      // $('#softwareEngineering').addClass('takeOver');
-
+  $("#CV").css({"top" : "96%", "left" : "96%"});
 }
-
-
-  //
-  //
-  // $('.left').animate({margin: "500px auto"},2000);
-  // $('.sideright').css({fontSize: "0px"},5000);
-  // // $('.techWork').animate({fontSize: "32px"},2000,"swing")
-  // // $('.workContainer').animate({height: "100%"},2000);
-  // $('.workContainer').css({height: "100%",left : "0px"});
-  //
-  //
-  // $('.vertical-text-right').delay(2500).animate({left: "85%"}); /*left -5%*/
-  // x++;
-  // console.log("x after soft click is: " + x);
-  // // $('#softwareEngineering').addClass('takeOver');
-
-/**/
