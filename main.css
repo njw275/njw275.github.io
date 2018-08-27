@@ -195,13 +195,17 @@ a:hover ~ #borderLeft {
 }
 
 .vertical-text-left {
+  display: inline;
   position: fixed;
   z-index: 1000;
   color: white;
   text-decoration: underline;
-	transform: rotate(-90deg);
+  transform: rotate(-90deg);
   top: 50%;
-  left: -15%; /*left -5%*/
+  left: -100%; /*left 85%*/
+  /* width: 100%; */
+  white-space: nowrap;
+  /* display: block; */
   font-size: 32px;
 }
 
