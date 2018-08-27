@@ -248,8 +248,9 @@ function onDocumentMouseDown(event) {
 
     event.preventDefault();
 
-    mouse.x = ( event.clientX / renderer.domElement.clientWidth ) * 2 - 1;
-    mouse.y = - ( event.clientY / renderer.domElement.clientHeight ) * 2 + 1;
+    let canvasBounds = this.renderer.context.canvas.getBoundingClientRect();
+    mouse.x = ( ( event.clientX - canvasBounds.left ) / ( canvasBounds.right - canvasBounds.left ) ) * 2 - 1;
+    mouse.y = - ( ( event.clientY - canvasBounds.top ) / ( canvasBounds.bottom - canvasBounds.top) ) * 2 + 1;
 
     console.log("mx: " + mouse.x + " my: " + mouse.y);
 
