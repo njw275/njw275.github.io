@@ -141,7 +141,7 @@ materialsArray.push(m5);
 materialsArray.push(m6);
 
 //-----------------------
-
+var objects = [];
 
 var geometry = new THREE.BoxGeometry(3, 3, 3);
 // var material = new THREE.MeshBasicMaterial( {color: 0x00ff00} );
@@ -158,6 +158,8 @@ cube.name = "Cube";
 
 // Finally, add the sphere to the scene.
 scene.add(cube);
+
+objects.push(cube);
 
 function update() {
   // Draw!
@@ -222,12 +224,13 @@ function update() {
       resizeEnds = false;
     }
   }
+
+console.log("isDragging: " + isDragging);
 }
 
 // Schedule the first frame.
 requestAnimationFrame(update);
 
-console.log("isDragging: " + isDragging);
 
 /* */
 var isDragging = false;
@@ -242,18 +245,17 @@ function onDocumentMouseDown(event) {
   if (event.target.nodeName == "CANVAS") {
     isDragging = true;
 
-    event.preventDefault();
-		mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-		mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-    // camera.position.x = radius * Math.sin( THREE.Math.degToRad( theta ) );
-    // camera.position.y = radius * Math.sin( THREE.Math.degToRad( theta ) );
-    // camera.position.z = radius * Math.cos( THREE.Math.degToRad( theta ) );
-    // camera.lookAt( scene.position );
-    camera.updateMatrixWorld();
-    // find intersections
-    raycaster.setFromCamera(mouse, camera);
-    var intersects = raycaster.intersectObjects(scene.children);
 
+    event.preventDefault();
+
+    mouse.x = ( event.clientX / renderer.domElement.clientWidth ) * 2 - 1;
+    mouse.y = - ( event.clientY / renderer.domElement.clientHeight ) * 2 + 1;
+
+    console.log("mx: " + mouse.x + " my: " + mouse.y);
+
+    raycaster.setFromCamera( mouse, camera );
+
+    var intersects = raycaster.intersectObjects( objects );
 
 
     if (intersects.length > 0 && intersects[0].object.name == "Cube") {
