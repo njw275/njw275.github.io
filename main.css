@@ -368,10 +368,13 @@ a:hover ~ #borderLeft {
   z-index: 50;
 }
 
-
-
-
-
+.website {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: underline;
+  font-size: 3vw;
+  cursor: pointer;
+}
 
 #aboutPicture {
   position: fixed;
