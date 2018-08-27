@@ -35,7 +35,7 @@ const camera =
   );
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xF3115B);
+scene.background = new THREE.Color(0xEB6357);
 
 
 // Add the camera to the scene.
@@ -227,7 +227,7 @@ function update() {
 // Schedule the first frame.
 requestAnimationFrame(update);
 
-
+console.log("isDragging: " + isDragging);
 
 /* */
 var isDragging = false;
