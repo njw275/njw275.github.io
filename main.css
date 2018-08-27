@@ -1,0 +1,484 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  /* height: 100%; */
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  background-color: #28E8F3;
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+}
+
+#CV {
+  z-index: 452342236234623327892439634267423798234789234789234782348796236236236;
+  position: fixed;
+}
+
+#draggingHolder {
+  top: 63%;
+  left: 34.5%;
+  position: fixed;
+  z-index: 25145149085184598240598235;
+}
+
+.works{
+  height: 60%;
+  width: 20%;
+  top: 20%;
+  z-index: 15001;
+  opacity: 0;
+  text-align: center;
+}
+
+.twoworks{
+  height: 60%;
+  width: 40%;
+  top: 20%;
+  z-index: 15001;
+  opacity: 0;
+  text-align: center;
+}
+
+.onework{
+  height: 60%;
+  width: 80%;
+  top: 20%;
+  z-index: 15001;
+  opacity: 0;
+  text-align: center;
+}
+
+.threeworks{
+  height: 60%;
+  width: 25%;
+  top: 20%;
+  z-index: 15001;
+  opacity: 0;
+  text-align: center;
+}
+
+.threeworksRight {
+  height: 60%;
+  width: 25%;
+  top: 20%;
+  z-index: 15001;
+  opacity: 0;
+  text-align: center;
+}
+
+.oneworkphoto {
+  float: left;
+  width: 45%;
+  height: 100%;
+}
+
+.oneworkphoto > * {
+  /* height: 55%; */
+  float: left;
+  width: 100%;
+}
+
+.oneworkinfo {
+    float: right;
+    width: 40%;
+}
+
+.showup {
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: steps(60);
+  background-repeat: no-repeat;
+  animation-name: showup;
+}
+
+#sketch-holder {
+  top: 35%;
+  text-align: center;
+}
+
+#VRBoxHolder {
+  display: none;
+  z-index: 101;
+  top: 15%;
+  text-align: center;
+}
+
+#githubPic {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  top: 96%;
+  left: 98%;
+  z-index: 200000000;
+}
+
+#linkedInPic {
+  width: 23px;
+  height: 20px;
+  position: fixed;
+  top: 96%;
+  left: 95.5%;
+  z-index: 200000000;
+}
+
+canvas {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 10% 25%;
+    z-index: 10000;
+    /* overflow: hidden; */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover ~ #borderLeft {
+  left: 15%;
+  right: 15%;
+}
+
+#borderLeft {
+  border-bottom: 2px solid #FFF;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 99%;
+}
+
+.vertical-text-left {
+  position: fixed;
+  z-index: 1000;
+  color: white;
+  text-decoration: underline;
+	transform: rotate(-90deg);
+  top: 50%;
+  left: -15%; /*left -5%*/
+  font-size: 32px;
+}
+
+.vertical-text-right {
+  display: inline;
+  position: fixed;
+  z-index: 1000;
+  color: white;
+  text-decoration: underline;
+	transform: rotate(90deg);
+  top: 50%;
+  left: 100%; /*left 85%*/
+  /* width: 100%; */
+  white-space: nowrap;
+  /* display: block; */
+  font-size: 32px;
+}
+
+/*
+.artists{
+	font-family: 'IBM Plex Sans', sans-serif;
+} */
+/* .textholder{display:table;height:400px;}
+.side{display:table-cell;vertical-align:middle;} */
+
+.textholder {
+  display: table;
+  height: 100%;
+  margin: 0px auto;
+  width: 1%;
+}
+.side {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: underline;
+  padding: 3%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 4vw;
+  /* font-size: 45px; */
+}
+
+#backButton {
+  display: none;
+  position: fixed;
+  z-index: 300000000000;
+  height: 7%;
+  width: 5%;
+  top: 8%;
+  left: 5%;
+  cursor: pointer;
+}
+
+#backButton2 {
+  display: none;
+  position: fixed;
+  z-index: 300000000000;
+  height: 7%;
+  width: 5%;
+  top: 8%;
+  left: 10%;
+  cursor: pointer;
+}
+
+
+
+#github {
+  top: 30%;
+  left: 46.5%;
+}
+
+#linkedin {
+  top: 40%;
+  left: 45.8%;
+}
+
+#name {
+  color: white;
+  position: fixed;
+  font-family: 'Yellowtail', cursive;
+  top: 20%;
+  left: 44%;
+  font-size: 25px;
+}
+
+.centerText {
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  color: white;
+  text-decoration: underline;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.sideText {
+  font-family: 'Poppins', sans-serif;
+  position: fixed;
+  color: white;
+  text-decoration: underline;
+  font-size: 4vw;
+  cursor: pointer;
+  /* display: none; */
+}
+
+.creativeWork {
+  display: none;
+}
+
+.csWork {
+  display: none;
+}
+
+/* .centerText {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: underline;
+  padding: 40px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 45px;
+} */
+
+.techWork {
+  font-size: 0px;
+  position: fixed;
+  color: #FFF;
+}
+/*
+
+.techWorkCreative {
+  font-size: 0px;
+  position: fixed;
+  color: #FFF;
+  /* border-bottom-style: dotted; */
+  /* text-decoration:  */
+
+
+/* .topLeft {
+  top: 15%;
+  left: 15%;
+}
+
+.topRight {
+  top: 15%;
+  left: 85%;
+} */
+
+.takeOver {
+  z-index: 10;
+  animation-name: takeOver;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.workContainer {
+  position: fixed;
+  /* left: 0px; */
+  width: 91.5%;
+  height: 0%; /* make 100% on click*/
+  /* opacity: 0.3;
+  background-color: blue; */
+  z-index: 50;
+}
+
+
+/* The element to apply the animation to */
+#softwareEngineering {
+  display: inline-block;
+  position: fixed;
+  left: 0px;
+  width: 43%; /*550/1280*/
+  height: 100%;
+  background-color: #28F282;
+  animation-name: moveRight;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+#creative {
+  display: inline-block;
+  position: fixed;
+  right: 0px;
+  width: 43%;
+  height: 100%;
+  background-color: #F3115B;
+  animation-name: moveLeft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+#about {
+  display: inline-block;
+  position: fixed;
+  left: 43%;
+  background-color: #28E8F3;
+  width: 14%;
+  height: 100%;
+
+}
+
+#aboutPicture {
+  position: fixed;
+  border-radius: 50%;
+  height: 15%;
+  width: 8%;
+  left: 46%;
+  top: 2%;
+}
+
+
+/* The animation code */
+@keyframes moveRight {
+    from {left: -43%;}
+    to {left: 0%;}
+}
+
+/* The animation code */
+@keyframes moveLeft {
+    from {right: -43%;}
+    to {right: 0%;}
+}
+
+/* The animation code */
+@keyframes takeOver {
+    from {width: 43%;}
+    to {width: 94%;}
+}
+
+/*   SVG Animations */
+@keyframes play60 {
+  0% {
+    background-position: 0px 0px;
+  }
+  1% {
+    background-position: -1440px 0px;
+  }
+  100% {
+    left: 40%;
+    background-position: -1440px 0px;
+  }
+}
+
+@keyframes play60x2 {
+  0% {
+    background-position: 0px 0px;
+  }
+  1% {
+    background-position: -1440px 0px;
+  }
+  100% {
+    background-position: -1440px 0px;
+  }
+}
+
+@keyframes showup {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes movemouse {
+  0% {
+    top: 85%;
+    left: 40%;
+  }
+  100% {
+    left: 55%;
+    top: 65%;
+  }
+}
+
+.play {
+  position: fixed;
+  top: 85%;
+  left: 60%; /*left -5%*/
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: steps(60);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  animation-name: play60;
+  z-index: 15001;
+}
+
+.play2 {
+  position: fixed;
+  /* top: 85%;
+  left: 60%; /*left -5%*/
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: steps(60);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  animation-name: play60x2;
+  z-index: 15001;
+}
+
+.movetocube{
+  position: fixed;
+  animation-duration: 3000ms;
+  animation-fill-mode: forwards;
+  /* animation-timing-function: steps(60); */
+  /* width: 24px; */
+  /* height: 24px; */
+  /* background-repeat: no-repeat; */
+  animation-name: movemouse;
+  z-index: 15000;
+}
