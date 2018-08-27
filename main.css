@@ -12,6 +12,16 @@ body {
   overflow: hidden;
 }
 
+#about {
+  display: inline-block;
+  position: fixed;
+  left: 43%;
+  background-color: #FFBC54; /*28E8F3*/
+  width: 14%;
+  height: 100%;
+
+}
+
 
 #softwareEngineering {
   display: inline-block;
@@ -361,15 +371,7 @@ a:hover ~ #borderLeft {
 
 
 
-#about {
-  display: inline-block;
-  position: fixed;
-  left: 43%;
-  background-color: #28E8F3;
-  width: 14%;
-  height: 100%;
 
-}
 
 #aboutPicture {
   position: fixed;
