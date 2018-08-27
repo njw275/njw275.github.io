@@ -8,8 +8,35 @@ body {
   padding: 0px;
   margin: 0px;
   position: relative;
-  background-color: #28E8F3;
+  background-color: #FFBC54; /* 28E8F3 */
   overflow: hidden;
+}
+
+
+#softwareEngineering {
+  display: inline-block;
+  position: fixed;
+  left: 0px;
+  width: 43%; /*550/1280*/
+  height: 100%;
+  background-color: #296EA7; /* 28F282 */
+  animation-name: moveRight;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+
+#creative {
+  display: inline-block;
+  position: fixed;
+  right: 0px;
+  width: 43%;
+  height: 100%;
+  background-color: #54ABF4; /* F3115B */
+  animation-name: moveLeft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  cursor: pointer;
 }
 
 p {
@@ -332,32 +359,7 @@ a:hover ~ #borderLeft {
 }
 
 
-/* The element to apply the animation to */
-#softwareEngineering {
-  display: inline-block;
-  position: fixed;
-  left: 0px;
-  width: 43%; /*550/1280*/
-  height: 100%;
-  background-color: #28F282;
-  animation-name: moveRight;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  cursor: pointer;
-}
 
-#creative {
-  display: inline-block;
-  position: fixed;
-  right: 0px;
-  width: 43%;
-  height: 100%;
-  background-color: #F3115B;
-  animation-name: moveLeft;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  cursor: pointer;
-}
 
 #about {
   display: inline-block;
